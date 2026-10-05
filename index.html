@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت در حال بروزرسانی | الکتروک</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            max-width: 520px;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .icon {
+            width: 72px;
+            height: 72px;
+            background: rgba(245, 158, 11, 0.15);
+            color: #f59e0b;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 15px;
+            color: #94a3b8;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .btn-reload {
+            display: inline-block;
+            background: #3b82f6;
+            color: #ffffff;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+        .btn-reload:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">⚡</div>
+        <div class="status-badge">سرور در حال بروزرسانی یا بررسی فنی</div>
+        <h1>فروشگاه الکتروک موقتاً در دسترس نیست</h1>
+        <p>
+            کاربر گرامی، سرور سایت هم‌اکنون به دلیل ارتقای فنی یا قطعی موقت شبکه در دسترس نیست. تیم فنی در حال بررسی وضعیت است و به زودی به مدار بازمی‌گردیم.
+        </p>
+        <button class="btn-reload" onclick="window.location.reload();">تلاش مجدد برای اتصال</button>
+    </div>
+</body>
+</html>
