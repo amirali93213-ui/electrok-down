@@ -1,0 +1,2 @@
+// جایگاه اتصال آینده به Capacitor با fallback وب.
+export class CapacitorAdapter{constructor(){this.capacitor=globalThis.Capacitor||null}get available(){return Boolean(this.capacitor?.isNativePlatform?.())}async init(){return{available:this.available,capacitor:this.capacitor}}async haptic(){try{await this.capacitor?.Plugins?.Haptics?.impact?.({style:'Light'})}catch{}}}

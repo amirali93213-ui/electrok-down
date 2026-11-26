@@ -1,0 +1,2 @@
+// صفحهٔ واحد برای قابلیت‌های قفل‌شده.
+export class ComingSoonScreen{constructor(onBack){this.onBack=onBack}mount(root,{title}){root.innerHTML=`<section class="screen"><div class="brand"><span class="brand-mark">R</span><span>REDLINE · رد لاین</span></div><div class="soon"><div class="eyebrow">قابلیت قفل‌شده</div><h1>${title}</h1><p>این بخش به‌زودی فعال می‌شود</p><button data-back>بازگشت به منو</button></div></section>`;root.querySelector('[data-back]').onclick=this.onBack}}

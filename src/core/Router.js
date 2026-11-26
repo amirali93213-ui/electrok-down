@@ -1,0 +1,2 @@
+// مسیریاب تک‌صفحه‌ای با پاک‌سازی صفحهٔ قبلی.
+export class Router{constructor(mount){this.mount=mount;this.current=null}navigate(screen,params={}){this.current?.destroy?.();this.current=screen;this.mount.replaceChildren();screen.mount(this.mount,params)}}

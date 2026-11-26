@@ -1,0 +1,2 @@
+// ذخیره‌سازی localStorage با fallback امن برای محیط‌های محدود.
+export class Storage{constructor(key){this.key=key;this.fallback=null}read(){try{const raw=globalThis.localStorage?.getItem(this.key);return raw?JSON.parse(raw):null}catch{return this.fallback}}write(value){this.fallback=value;try{globalThis.localStorage?.setItem(this.key,JSON.stringify(value))}catch{}}clear(){this.fallback=null;try{globalThis.localStorage?.removeItem(this.key)}catch{}}}

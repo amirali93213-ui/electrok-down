@@ -1,0 +1,2 @@
+// جایگاه اتصال آینده به SDK ایتا؛ نبود SDK بی‌خطا است.
+export class EitaaAdapter{constructor(){this.sdk=globalThis.Eitaa||globalThis.eitaa||null}get available(){return Boolean(this.sdk)}async init(){return{available:this.available,sdk:this.sdk}}async authenticate(){return{authenticated:false,reason:'sdk-not-configured'}}async saveCloud(_payload){return{saved:false,reason:'worker-not-configured'}}}
