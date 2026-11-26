@@ -1,2 +1,0 @@
-// تنها مرجع تنظیم فعال‌بودن قابلیت‌های منوی اصلی.
-export const APP_CONFIG=Object.freeze({appName:'Redline',gameTitle:'رد لاین',features:Object.freeze({enterCity:true,upgrades:false,carShop:false}),storageKey:'game-care-foundation-v1',map:Object.freeze({width:2400,height:1800,roadWidth:110})});
